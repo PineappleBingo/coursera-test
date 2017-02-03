@@ -5,7 +5,7 @@ var bs = require('browser-sync').create();
 gulp.task('browser-sync', ['sass'], function() {
     bs.init({
         server: {
-            baseDir: "./"
+            baseDir: "./" 
         }
     });
 });
@@ -19,6 +19,7 @@ gulp.task('sass', function () {
 
 gulp.task('watch', ['browser-sync'], function () { //files-to-watch
     gulp.watch("assets/scss/*.scss", ['sass']);
+
     gulp.watch("*.html").on('change', bs.reload);
 });
 

@@ -1,0 +1,52 @@
+@import 'var';
+
+.header{
+
+	a{ text-decoration: none; }
+	ul{ list-style: none;}
+	
+	.nav-container ul:after{
+		overflow: hidden;
+	}
+
+	
+}
+
+#header-nav-container{
+	nav > ul{
+		
+		border: 1px solid #000;
+		&:after{ @include clearFix; }
+		&:before{ @include clearFix; }
+	}
+
+	li{
+		float: left;
+		margin-right: 15px;
+		&:last-child{ margin: 0;}
+	}
+
+	a{
+		display: block;
+		padding: 10px;
+		background: #000;
+	}
+	
+	nav >  .sub-menu{
+		display: none;
+	}
+	
+	nav > ul > li:hover {
+		border: 1px solid #fff;
+		// display: block;
+		// position: absolute;
+		// top: 100px;
+	} 	
+
+	// ul li:hover a {
+	// 	background-color: #fff;
+	// 	//display: block;
+	// }
+
+}
+

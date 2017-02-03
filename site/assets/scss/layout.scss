@@ -1,7 +1,12 @@
-@import 'reset';
+// @import 'reset';
+@import 'var';
+@import 'grid';
+@import 'content';
+@import 'header';
+
 
 body{
-	font-size: 20px;
+	font-size: 18px;
 
 }
 
@@ -12,5 +17,6 @@ body{
 	padding: 0 10px;
 	margin: 0 auto;
 	box-sizing: border-box;
-
+	border: 1px solid #ff0;
+	
 }

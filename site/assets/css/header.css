@@ -1,0 +1,52 @@
+/*/////Variables//////*/
+/*/Numbers and colors/*/
+/*/////Mixins//////*/
+/*////Mixin With Arguments////*/
+/*////Call Out A Mixin////*/
+.clear-fix {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+.header a {
+  text-decoration: none; }
+
+.header ul {
+  list-style: none; }
+
+.header .nav-container ul:after {
+  overflow: hidden; }
+
+#header-nav-container nav > ul {
+  border: 1px solid #000; }
+  #header-nav-container nav > ul:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden; }
+  #header-nav-container nav > ul:before {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden; }
+
+#header-nav-container li {
+  float: left;
+  margin-right: 15px; }
+  #header-nav-container li:last-child {
+    margin: 0; }
+
+#header-nav-container a {
+  display: block;
+  padding: 10px;
+  background: #000; }
+
+#header-nav-container nav > .sub-menu {
+  display: none; }
+
+#header-nav-container nav > ul > li:hover {
+  border: 1px solid #fff; }
