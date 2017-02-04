@@ -2,51 +2,73 @@
 
 .header{
 
-	a{ text-decoration: none; }
+	a{ text-decoration: none;
+		text-align: center;		
+	}
 	ul{ list-style: none;}
+	li{ text-align: center;}
 	
 	.nav-container ul:after{
 		overflow: hidden;
 	}
-
-	
 }
 
 #header-nav-container{
-	nav > ul{
+	#navigation{
 		
-		border: 1px solid #000;
 		&:after{ @include clearFix; }
-		&:before{ @include clearFix; }
 	}
 
-	li{
+	#navigation > li{
 		float: left;
+		display: block;
+		position: relative;
+		box-sizing: border-box;
 		margin-right: 15px;
 		&:last-child{ margin: 0;}
 	}
 
-	a{
+	#navigation li a{
 		display: block;
 		padding: 10px;
 		background: #000;
 	}
 	
-	nav >  .sub-menu{
+	#navigation ul.sub-menu{
 		display: none;
 	}
-	
-	nav > ul > li:hover {
-		border: 1px solid #fff;
-		// display: block;
-		// position: absolute;
-		// top: 100px;
-	} 	
 
-	// ul li:hover a {
-	// 	background-color: #fff;
-	// 	//display: block;
-	// }
+	#navigation li.drop:hover ul.sub-menu{
+		display: block;
+		position: absolute;
+		top: 75px;
+		left: -49px;
+	}
+	
+	#navigation ul.sub-menu{
+		li{
+			display: block;
+		}
+		a{
+			display: block;
+			padding: 10px;
+			white-space: nowrap;
+		}
+	
+	}
+	#navigation li.drop{
+		background: #f00;
+	}
+
+	#navigation .drop{
+		border: 10px solid #ff0;
+	}
+	
+	#navigation .drop:hover {
+		border: 10px solid #fff;	
+	}
+
+		
 
 }
 
