@@ -13,9 +13,18 @@
 	}
 }
 
+.logo{
+	width: 150px;
+	height: 80px;
+	border: 1px solid #f00;
+	display: block;
+	float: left;
+}
+
 #header-nav-container{
 	#navigation{
-		
+		display: block;
+		float: right;
 		&:after{ @include clearFix; }
 	}
 
@@ -24,14 +33,19 @@
 		display: block;
 		position: relative;
 		box-sizing: border-box;
-		margin-right: 15px;
-		&:last-child{ margin: 0;}
+		//margin-right: 15px;
+		//&:last-child{ margin: 0;}
 	}
 
 	#navigation li a{
 		display: block;
-		padding: 10px;
-		background: #000;
+		padding: 10px 15px;
+		background: #666;
+		color: #999;
+		&:hover{
+			color: #fff;
+			background: #333;
+		}
 	}
 	
 	#navigation ul.sub-menu{
@@ -41,8 +55,9 @@
 	#navigation li.drop:hover ul.sub-menu{
 		display: block;
 		position: absolute;
-		top: 75px;
-		left: -49px;
+		top: 43px;
+		left: -40px;
+		z-index: 100;
 	}
 	
 	#navigation ul.sub-menu{
@@ -51,24 +66,21 @@
 		}
 		a{
 			display: block;
-			padding: 10px;
+			padding: 10px 15px;;
 			white-space: nowrap;
 		}
 	
 	}
 	#navigation li.drop{
-		background: #f00;
+		/*contents of list*/
 	}
 
 	#navigation .drop{
-		border: 10px solid #ff0;
 	}
 	
 	#navigation .drop:hover {
-		border: 10px solid #fff;	
 	}
 
-		
-
+	&:after{ @include clearFix; }
 }
 

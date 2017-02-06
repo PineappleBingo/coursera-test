@@ -91,8 +91,8 @@
     box-sizing: border-box; } }
 
 body {
-  background: #999;
-  color: #fff; }
+  background: #fff;
+  color: #000; }
   body a {
     text-decoration: none;
     color: #fff; }
@@ -122,26 +122,37 @@ body {
 .header .nav-container ul:after {
   overflow: hidden; }
 
-#header-nav-container #navigation:after {
-  content: '.';
+.logo {
+  width: 150px;
+  height: 80px;
+  border: 1px solid #f00;
   display: block;
-  clear: both;
-  height: 0;
-  visibility: hidden; }
+  float: left; }
+
+#header-nav-container #navigation {
+  display: block;
+  float: right; }
+  #header-nav-container #navigation:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden; }
 
 #header-nav-container #navigation > li {
   float: left;
   display: block;
   position: relative;
-  box-sizing: border-box;
-  margin-right: 15px; }
-  #header-nav-container #navigation > li:last-child {
-    margin: 0; }
+  box-sizing: border-box; }
 
 #header-nav-container #navigation li a {
   display: block;
-  padding: 10px;
-  background: #000; }
+  padding: 10px 15px;
+  background: #666;
+  color: #999; }
+  #header-nav-container #navigation li a:hover {
+    color: #fff;
+    background: #333; }
 
 #header-nav-container #navigation ul.sub-menu {
   display: none; }
@@ -149,25 +160,27 @@ body {
 #header-nav-container #navigation li.drop:hover ul.sub-menu {
   display: block;
   position: absolute;
-  top: 75px;
-  left: -49px; }
+  top: 43px;
+  left: -40px;
+  z-index: 100; }
 
 #header-nav-container #navigation ul.sub-menu li {
   display: block; }
 
 #header-nav-container #navigation ul.sub-menu a {
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
   white-space: nowrap; }
 
 #header-nav-container #navigation li.drop {
-  background: #f00; }
+  /*contents of list*/ }
 
-#header-nav-container #navigation .drop {
-  border: 10px solid #ff0; }
-
-#header-nav-container #navigation .drop:hover {
-  border: 10px solid #fff; }
+#header-nav-container:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
 
 body {
   font-size: 18px; }
