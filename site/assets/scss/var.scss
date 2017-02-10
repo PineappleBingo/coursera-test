@@ -1,9 +1,10 @@
 /*/////Variables//////*/
 /*/Numbers and colors/*/
-$darkGray: #333333;
-$lightGray: #999999;
+$darkgray: #333333;
+$lightgray: #999999;
 
-$lightGreen: #00cc00;
+$lightgreen: #00cc00;
+$greens:33cc33;
 $green: #006600;
 
 $white: #fff;
@@ -16,7 +17,7 @@ $white: #fff;
 	background-image: url(../img/sprites.png);
 	background-repeat: none;
 	background-position: $x $y;
-	background-size: 400px;
+	background-size: 500px;
 } 
 
 @mixin clearFix{

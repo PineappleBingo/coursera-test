@@ -3,7 +3,7 @@
 @import 'grid';
 @import 'content';
 @import 'header';
-
+@import 'footer';
 
 body{
 	font-size: 18px;
@@ -17,6 +17,6 @@ body{
 	padding: 0 10px;
 	margin: 0 auto;
 	box-sizing: border-box;
-	border: 1px solid #ff0;
-	
+	//border: 1px solid #ff0;
+	&:after{ @include clearFix;}
 }

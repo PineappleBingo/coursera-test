@@ -115,8 +115,6 @@ body {
   height: 100px;
   border-bottom: 1px solid #ccc;
   position: fixed;
-  top: 0;
-  background: #fff;
   z-index: 100; }
   .header a {
     text-decoration: none;
@@ -206,20 +204,10 @@ body {
   box-sizing: border-box;
   padding-top: 20px;
   margin-top: 20px;
-  background-image: url(../img/525298037.jpg);
-  background-repeat: none;
-  background-position: center-bottom;
-  background-size: contain;
-  min-height: 800px;
-  color: #fff; }
-  .footer-bg a {
-    text-decoration: none; }
-
-.footer {
-  border: 1px solid #f00; }
+  border-bottom: 12px soild #00cc00; }
 
 .footer-bottom {
-  background: #333333; }
+  background: #999999; }
 
 .site-by {
   float: right; }
