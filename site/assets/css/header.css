@@ -20,12 +20,9 @@
   background: #fff;
   z-index: 100; }
   .header a {
-    text-decoration: none;
-    text-align: center; }
+    text-decoration: none; }
   .header ul {
     list-style: none; }
-  .header li {
-    text-align: center; }
   .header .container {
     height: 100%; }
 
@@ -35,10 +32,16 @@
 .logo {
   width: 251px;
   height: 67px;
-  border: 1px solid #f00;
   display: block;
   float: left;
-  margin-top: 10px; }
+  margin-top: 10px;
+  display: block;
+  overflow: hidden;
+  text-indent: -2000em;
+  background-image: url(../img/sprites.png);
+  background-repeat: none;
+  background-position: 0px 10px;
+  background-size: 500px; }
 
 #header-nav-container {
   position: absolute;

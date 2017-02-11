@@ -29,6 +29,9 @@
   border: 1px solid #f00;
   min-height: 500px; }
 
+.footer .container {
+  background: #333333; }
+
 .footer-column-one {
   border: 1px solid #ff0;
   background: #333333;
@@ -43,6 +46,32 @@
   border: 1px solid #f00;
   background: #333333;
   min-height: 300px; }
+
+.footer-logo {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #f00;
+  display: block;
+  margin-top: 10px;
+  display: block;
+  overflow: hidden;
+  text-indent: -2000em;
+  background-image: url(../img/sprites.png);
+  background-repeat: none;
+  background-position: 0px -79px;
+  background-size: 500px; }
+
+.social-media ul {
+  list-style: none; }
+  .social-media ul li {
+    float: left;
+    margin: 5px; }
+  .social-media ul:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden; }
 
 .footer-bottom {
   display: block;
