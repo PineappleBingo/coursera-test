@@ -3,7 +3,7 @@
 .footer-bg{
 	display: block;
 	box-sizing: border-box;
-	padding-top: 40px;
+	padding-top: 130px;
 	margin-top: 80px;
 	position: relative;
 	background-image: url(../img/525298037.jpg);
@@ -22,23 +22,25 @@
 
 .footer{
 	border: 1px solid #f00;
-	
 	min-height: 500px;
 }
 
 .footer-column-one{
 	border: 1px solid #ff0;
 	background: $darkgray;
+	min-height: 300px;
 }
 
 .footer-column-two{
 	border: 1px solid #fff;
 	background: $darkgray;
+	min-height: 300px;
 }
 
 .footer-column-three{
 	border: 1px solid #f00;
 	background: $darkgray;
+	min-height: 300px;
 }
 
 .footer-bottom{
