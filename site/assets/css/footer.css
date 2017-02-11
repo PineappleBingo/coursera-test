@@ -13,22 +13,41 @@
 .footer-bg {
   display: block;
   box-sizing: border-box;
-  padding-top: 20px;
-  margin-top: 20px;
+  padding-top: 40px;
+  margin-top: 80px;
+  position: relative;
   background-image: url(../img/525298037.jpg);
   background-repeat: none;
-  background-position: center-bottom;
-  background-size: contain;
+  background-position: top;
+  background-size: cover;
   min-height: 800px;
   color: #fff; }
   .footer-bg a {
     text-decoration: none; }
 
 .footer {
-  border: 1px solid #f00; }
+  border: 1px solid #f00;
+  min-height: 500px; }
+
+.footer-column-one {
+  border: 1px solid #ff0;
+  background: #333333; }
+
+.footer-column-two {
+  border: 1px solid #fff;
+  background: #333333; }
+
+.footer-column-three {
+  border: 1px solid #f00;
+  background: #333333; }
 
 .footer-bottom {
-  background: #333333; }
+  display: block;
+  background: #333333;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  padding: 20px 0; }
 
 .site-by {
   float: right; }
